@@ -1,0 +1,3 @@
+/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles/rebuild_cache.dir
+/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles/edit_cache.dir
+/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles/pro.dir
