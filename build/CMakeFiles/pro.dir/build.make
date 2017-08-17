@@ -201,6 +201,174 @@ CMakeFiles/pro.dir/GameEngine.cpp.o.provides: CMakeFiles/pro.dir/GameEngine.cpp.
 CMakeFiles/pro.dir/GameEngine.cpp.o.provides.build: CMakeFiles/pro.dir/GameEngine.cpp.o
 
 
+CMakeFiles/pro.dir/Display.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/Display.cpp.o: ../Display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pro.dir/Display.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/Display.cpp.o -c /home/lytchier/Documents/C++/Asteroid/Display.cpp
+
+CMakeFiles/pro.dir/Display.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/Display.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/Display.cpp > CMakeFiles/pro.dir/Display.cpp.i
+
+CMakeFiles/pro.dir/Display.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/Display.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/Display.cpp -o CMakeFiles/pro.dir/Display.cpp.s
+
+CMakeFiles/pro.dir/Display.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/Display.cpp.o.requires
+
+CMakeFiles/pro.dir/Display.cpp.o.provides: CMakeFiles/pro.dir/Display.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Display.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/Display.cpp.o.provides
+
+CMakeFiles/pro.dir/Display.cpp.o.provides.build: CMakeFiles/pro.dir/Display.cpp.o
+
+
+CMakeFiles/pro.dir/ObjectManager.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/ObjectManager.cpp.o: ../ObjectManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pro.dir/ObjectManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/ObjectManager.cpp.o -c /home/lytchier/Documents/C++/Asteroid/ObjectManager.cpp
+
+CMakeFiles/pro.dir/ObjectManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/ObjectManager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/ObjectManager.cpp > CMakeFiles/pro.dir/ObjectManager.cpp.i
+
+CMakeFiles/pro.dir/ObjectManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/ObjectManager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/ObjectManager.cpp -o CMakeFiles/pro.dir/ObjectManager.cpp.s
+
+CMakeFiles/pro.dir/ObjectManager.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/ObjectManager.cpp.o.requires
+
+CMakeFiles/pro.dir/ObjectManager.cpp.o.provides: CMakeFiles/pro.dir/ObjectManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectManager.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/ObjectManager.cpp.o.provides
+
+CMakeFiles/pro.dir/ObjectManager.cpp.o.provides.build: CMakeFiles/pro.dir/ObjectManager.cpp.o
+
+
+CMakeFiles/pro.dir/Timer.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/Timer.cpp.o: ../Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pro.dir/Timer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/Timer.cpp.o -c /home/lytchier/Documents/C++/Asteroid/Timer.cpp
+
+CMakeFiles/pro.dir/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/Timer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/Timer.cpp > CMakeFiles/pro.dir/Timer.cpp.i
+
+CMakeFiles/pro.dir/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/Timer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/Timer.cpp -o CMakeFiles/pro.dir/Timer.cpp.s
+
+CMakeFiles/pro.dir/Timer.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/Timer.cpp.o.requires
+
+CMakeFiles/pro.dir/Timer.cpp.o.provides: CMakeFiles/pro.dir/Timer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Timer.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/Timer.cpp.o.provides
+
+CMakeFiles/pro.dir/Timer.cpp.o.provides.build: CMakeFiles/pro.dir/Timer.cpp.o
+
+
+CMakeFiles/pro.dir/ResourceManager.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/ResourceManager.cpp.o: ../ResourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pro.dir/ResourceManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/ResourceManager.cpp.o -c /home/lytchier/Documents/C++/Asteroid/ResourceManager.cpp
+
+CMakeFiles/pro.dir/ResourceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/ResourceManager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/ResourceManager.cpp > CMakeFiles/pro.dir/ResourceManager.cpp.i
+
+CMakeFiles/pro.dir/ResourceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/ResourceManager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/ResourceManager.cpp -o CMakeFiles/pro.dir/ResourceManager.cpp.s
+
+CMakeFiles/pro.dir/ResourceManager.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/ResourceManager.cpp.o.requires
+
+CMakeFiles/pro.dir/ResourceManager.cpp.o.provides: CMakeFiles/pro.dir/ResourceManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ResourceManager.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/ResourceManager.cpp.o.provides
+
+CMakeFiles/pro.dir/ResourceManager.cpp.o.provides.build: CMakeFiles/pro.dir/ResourceManager.cpp.o
+
+
+CMakeFiles/pro.dir/EntityFactory.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../EntityFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pro.dir/EntityFactory.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/EntityFactory.cpp.o -c /home/lytchier/Documents/C++/Asteroid/EntityFactory.cpp
+
+CMakeFiles/pro.dir/EntityFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/EntityFactory.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/EntityFactory.cpp > CMakeFiles/pro.dir/EntityFactory.cpp.i
+
+CMakeFiles/pro.dir/EntityFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/EntityFactory.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/EntityFactory.cpp -o CMakeFiles/pro.dir/EntityFactory.cpp.s
+
+CMakeFiles/pro.dir/EntityFactory.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/EntityFactory.cpp.o.requires
+
+CMakeFiles/pro.dir/EntityFactory.cpp.o.provides: CMakeFiles/pro.dir/EntityFactory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EntityFactory.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/EntityFactory.cpp.o.provides
+
+CMakeFiles/pro.dir/EntityFactory.cpp.o.provides.build: CMakeFiles/pro.dir/EntityFactory.cpp.o
+
+
+CMakeFiles/pro.dir/GameLogic.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../GameLogic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pro.dir/GameLogic.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/GameLogic.cpp.o -c /home/lytchier/Documents/C++/Asteroid/GameLogic.cpp
+
+CMakeFiles/pro.dir/GameLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/GameLogic.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/GameLogic.cpp > CMakeFiles/pro.dir/GameLogic.cpp.i
+
+CMakeFiles/pro.dir/GameLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/GameLogic.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/GameLogic.cpp -o CMakeFiles/pro.dir/GameLogic.cpp.s
+
+CMakeFiles/pro.dir/GameLogic.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/GameLogic.cpp.o.requires
+
+CMakeFiles/pro.dir/GameLogic.cpp.o.provides: CMakeFiles/pro.dir/GameLogic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/GameLogic.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/GameLogic.cpp.o.provides
+
+CMakeFiles/pro.dir/GameLogic.cpp.o.provides.build: CMakeFiles/pro.dir/GameLogic.cpp.o
+
+
+CMakeFiles/pro.dir/EventHandler.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../EventHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pro.dir/EventHandler.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/EventHandler.cpp.o -c /home/lytchier/Documents/C++/Asteroid/EventHandler.cpp
+
+CMakeFiles/pro.dir/EventHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/EventHandler.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/EventHandler.cpp > CMakeFiles/pro.dir/EventHandler.cpp.i
+
+CMakeFiles/pro.dir/EventHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/EventHandler.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/EventHandler.cpp -o CMakeFiles/pro.dir/EventHandler.cpp.s
+
+CMakeFiles/pro.dir/EventHandler.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/EventHandler.cpp.o.requires
+
+CMakeFiles/pro.dir/EventHandler.cpp.o.provides: CMakeFiles/pro.dir/EventHandler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EventHandler.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/EventHandler.cpp.o.provides
+
+CMakeFiles/pro.dir/EventHandler.cpp.o.provides.build: CMakeFiles/pro.dir/EventHandler.cpp.o
+
+
 # Object files for target pro
 pro_OBJECTS = \
 "CMakeFiles/pro.dir/main.cpp.o" \
@@ -208,7 +376,14 @@ pro_OBJECTS = \
 "CMakeFiles/pro.dir/Player.cpp.o" \
 "CMakeFiles/pro.dir/Object.cpp.o" \
 "CMakeFiles/pro.dir/Enemies.cpp.o" \
-"CMakeFiles/pro.dir/GameEngine.cpp.o"
+"CMakeFiles/pro.dir/GameEngine.cpp.o" \
+"CMakeFiles/pro.dir/Display.cpp.o" \
+"CMakeFiles/pro.dir/ObjectManager.cpp.o" \
+"CMakeFiles/pro.dir/Timer.cpp.o" \
+"CMakeFiles/pro.dir/ResourceManager.cpp.o" \
+"CMakeFiles/pro.dir/EntityFactory.cpp.o" \
+"CMakeFiles/pro.dir/GameLogic.cpp.o" \
+"CMakeFiles/pro.dir/EventHandler.cpp.o"
 
 # External object files for target pro
 pro_EXTERNAL_OBJECTS =
@@ -219,6 +394,13 @@ pro: CMakeFiles/pro.dir/Player.cpp.o
 pro: CMakeFiles/pro.dir/Object.cpp.o
 pro: CMakeFiles/pro.dir/Enemies.cpp.o
 pro: CMakeFiles/pro.dir/GameEngine.cpp.o
+pro: CMakeFiles/pro.dir/Display.cpp.o
+pro: CMakeFiles/pro.dir/ObjectManager.cpp.o
+pro: CMakeFiles/pro.dir/Timer.cpp.o
+pro: CMakeFiles/pro.dir/ResourceManager.cpp.o
+pro: CMakeFiles/pro.dir/EntityFactory.cpp.o
+pro: CMakeFiles/pro.dir/GameLogic.cpp.o
+pro: CMakeFiles/pro.dir/EventHandler.cpp.o
 pro: CMakeFiles/pro.dir/build.make
 pro: /usr/lib/x86_64-linux-gnu/libGLU.so
 pro: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -228,7 +410,7 @@ pro: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 pro: /usr/lib/x86_64-linux-gnu/libsfml-audio.so
 pro: /usr/lib/x86_64-linux-gnu/libsfml-network.so
 pro: CMakeFiles/pro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable pro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable pro"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -242,6 +424,13 @@ CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/Player.cpp.o.requires
 CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/Object.cpp.o.requires
 CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/Enemies.cpp.o.requires
 CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/GameEngine.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/Display.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/ObjectManager.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/Timer.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/ResourceManager.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/EntityFactory.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/GameLogic.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/EventHandler.cpp.o.requires
 
 .PHONY : CMakeFiles/pro.dir/requires
 

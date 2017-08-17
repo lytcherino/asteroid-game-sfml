@@ -7,6 +7,8 @@
 #include <ctime>
 #include <cstdlib>
 #include <memory>
+#include "ResourceManager.h"
+
 
 struct Velocity {
   double x, y;
@@ -42,6 +44,9 @@ class Object
   Velocity getVelocity() const;
   void setVelocity(double x, double y);
 
+  void setVelocityX(double x);
+  void setVelocityY(double y);
+
   void setHealth(int);
   void setPosition(double x, double y);
 
@@ -63,6 +68,8 @@ class Object
   void setSpriteScale(double x, double y);
 
   virtual void collision(std::shared_ptr<Object>) = 0;
+  void draw(sf::RenderWindow&);
+
   void setType(enum ObjectTypes);
   ObjectTypes getType() const;
 };

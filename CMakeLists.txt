@@ -6,7 +6,7 @@ project('Asteroid')
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED)
 
-set(SOURCE_FILES main.cpp Asteroid.cpp Player.cpp Object.cpp Enemies.cpp GameEngine.cpp)
+set(SOURCE_FILES main.cpp Asteroid.cpp Player.cpp Object.cpp Enemies.cpp GameEngine.cpp Display.cpp ObjectManager.cpp Timer.cpp ResourceManager.cpp EntityFactory.cpp GameLogic.cpp EventHandler.cpp)
 set(CMAKE_MODULE_PATH "/usr/share/SFML/cmake/Modules")
 
 

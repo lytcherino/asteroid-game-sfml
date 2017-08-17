@@ -86,6 +86,16 @@ void Object::setVelocity(double x, double y)
   velocity.y = y;
 }
 
+void Object::setVelocityX(double x)
+{
+  velocity.x = x;
+}
+
+void Object::setVelocityY(double y)
+{
+  velocity.y = y;
+}
+
 Position Object::getPosition() const
 {
   return position;
@@ -104,4 +114,9 @@ void Object::setSpriteScale(double x, double y)
 int Object::getID()
 {
   return currentID;
+}
+
+void Object::draw(sf::RenderWindow& window)
+{
+  window.draw(sprite);
 }

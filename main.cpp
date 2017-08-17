@@ -4,8 +4,7 @@
 
 int main()
 {
-  sf::RenderWindow window(sf::VideoMode(1400, 800), "Game");
-  GameEngine game(window);
 
+  GameEngine::start();
   return 0; 
 }

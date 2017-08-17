@@ -1,47 +1,34 @@
-#include "Player.h"
-#include "Asteroid.h"
-#include "Object.h"
-#include <vector>
+#ifndef GAME_ENGINE_H
+#define GAME_ENGINE_H
+
 #include <memory>
-#include <cstdlib>
-#include <ctime>
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "ObjectManager.h"
+#include "Timer.h"
+#include "Display.h"
+#include "ResourceManager.h"
+#include "EntityFactory.h"
+#include "GameLogic.h"
+#include "EventHandler.h"
+#include "Player.h"
 
-class GameEngine
+namespace GameEngine
 {
- private:
+  extern Timer loopTimer;
 
-  std::vector<std::shared_ptr<Asteroid>> enemies;
-  std::vector<std::shared_ptr<Player>> players;
-  std::vector<std::shared_ptr<Object>> objects;
+  extern std::shared_ptr<Player> player;
 
-  sf::Texture playerTexture;
-  sf::Texture asteroidTexture;
-
-  constexpr static int WIDTH = 1400;
-  constexpr static int HEIGHT = 800;
-
-  sf::RenderWindow* window;
-
-  sf::Clock clock;
-
- public:
-
-  GameEngine(sf::RenderWindow&);
-
-  void initialise();
+  void start();
   void run();
-
-  void createPlayer(const std::string&);
-  void generateAsteroids();
-  int getNumberOfAsteroids();
-
-  void updateGameState(sf::Time);
-  void render();
   void draw();
 
-  bool spriteCollision(std::shared_ptr<Object>);
-  void updateSpritePosition(sf::Time elapsed);
-};
- 
+  void initialise();
+
+  extern ObjectManager objectManager;
+
+  void render();
+
+}
+
+#endif

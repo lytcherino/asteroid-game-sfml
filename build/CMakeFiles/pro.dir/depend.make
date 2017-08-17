@@ -6,34 +6,95 @@ CMakeFiles/pro.dir/Asteroid.cpp.o: ../Asteroid.h
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../Enemies.h
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../Object.h
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../Position.h
+CMakeFiles/pro.dir/Asteroid.cpp.o: ../ResourceManager.h
+
+CMakeFiles/pro.dir/Display.cpp.o: ../Display.cpp
+CMakeFiles/pro.dir/Display.cpp.o: ../Display.h
 
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Enemies.cpp
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Enemies.h
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Object.h
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Position.h
+CMakeFiles/pro.dir/Enemies.cpp.o: ../ResourceManager.h
+
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../Asteroid.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../Display.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../Enemies.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../EntityFactory.cpp
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../EntityFactory.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../Object.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../ObjectManager.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../Player.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../Position.h
+CMakeFiles/pro.dir/EntityFactory.cpp.o: ../ResourceManager.h
+
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../Display.h
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../EventHandler.cpp
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../EventHandler.h
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../GameLogic.h
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../Object.h
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../Player.h
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../Position.h
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../ResourceManager.h
 
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../Asteroid.h
+CMakeFiles/pro.dir/GameEngine.cpp.o: ../Display.h
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../Enemies.h
+CMakeFiles/pro.dir/GameEngine.cpp.o: ../EntityFactory.h
+CMakeFiles/pro.dir/GameEngine.cpp.o: ../EventHandler.h
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../GameEngine.cpp
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../GameEngine.h
+CMakeFiles/pro.dir/GameEngine.cpp.o: ../GameLogic.h
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../Object.h
+CMakeFiles/pro.dir/GameEngine.cpp.o: ../ObjectManager.h
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../Player.h
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../Position.h
+CMakeFiles/pro.dir/GameEngine.cpp.o: ../ResourceManager.h
+CMakeFiles/pro.dir/GameEngine.cpp.o: ../Timer.h
+
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../GameLogic.cpp
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../GameLogic.h
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../Object.h
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../Player.h
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../Position.h
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../ResourceManager.h
 
 CMakeFiles/pro.dir/Object.cpp.o: ../Object.cpp
 CMakeFiles/pro.dir/Object.cpp.o: ../Object.h
 CMakeFiles/pro.dir/Object.cpp.o: ../Position.h
+CMakeFiles/pro.dir/Object.cpp.o: ../ResourceManager.h
+
+CMakeFiles/pro.dir/ObjectManager.cpp.o: ../Object.h
+CMakeFiles/pro.dir/ObjectManager.cpp.o: ../ObjectManager.cpp
+CMakeFiles/pro.dir/ObjectManager.cpp.o: ../ObjectManager.h
+CMakeFiles/pro.dir/ObjectManager.cpp.o: ../Player.h
+CMakeFiles/pro.dir/ObjectManager.cpp.o: ../Position.h
+CMakeFiles/pro.dir/ObjectManager.cpp.o: ../ResourceManager.h
 
 CMakeFiles/pro.dir/Player.cpp.o: ../Object.h
 CMakeFiles/pro.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/pro.dir/Player.cpp.o: ../Player.h
 CMakeFiles/pro.dir/Player.cpp.o: ../Position.h
+CMakeFiles/pro.dir/Player.cpp.o: ../ResourceManager.h
+
+CMakeFiles/pro.dir/ResourceManager.cpp.o: ../ResourceManager.cpp
+CMakeFiles/pro.dir/ResourceManager.cpp.o: ../ResourceManager.h
+
+CMakeFiles/pro.dir/Timer.cpp.o: ../Timer.cpp
+CMakeFiles/pro.dir/Timer.cpp.o: ../Timer.h
 
 CMakeFiles/pro.dir/main.cpp.o: ../Asteroid.h
+CMakeFiles/pro.dir/main.cpp.o: ../Display.h
 CMakeFiles/pro.dir/main.cpp.o: ../Enemies.h
+CMakeFiles/pro.dir/main.cpp.o: ../EntityFactory.h
+CMakeFiles/pro.dir/main.cpp.o: ../EventHandler.h
 CMakeFiles/pro.dir/main.cpp.o: ../GameEngine.h
+CMakeFiles/pro.dir/main.cpp.o: ../GameLogic.h
 CMakeFiles/pro.dir/main.cpp.o: ../Object.h
+CMakeFiles/pro.dir/main.cpp.o: ../ObjectManager.h
 CMakeFiles/pro.dir/main.cpp.o: ../Player.h
 CMakeFiles/pro.dir/main.cpp.o: ../Position.h
+CMakeFiles/pro.dir/main.cpp.o: ../ResourceManager.h
+CMakeFiles/pro.dir/main.cpp.o: ../Timer.h
 CMakeFiles/pro.dir/main.cpp.o: ../main.cpp
 

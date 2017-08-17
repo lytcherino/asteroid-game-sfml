@@ -150,6 +150,33 @@ Asteroid.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Asteroid.cpp.s
 .PHONY : Asteroid.cpp.s
 
+Display.o: Display.cpp.o
+
+.PHONY : Display.o
+
+# target to build an object file
+Display.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Display.cpp.o
+.PHONY : Display.cpp.o
+
+Display.i: Display.cpp.i
+
+.PHONY : Display.i
+
+# target to preprocess a source file
+Display.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Display.cpp.i
+.PHONY : Display.cpp.i
+
+Display.s: Display.cpp.s
+
+.PHONY : Display.s
+
+# target to generate assembly for a file
+Display.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Display.cpp.s
+.PHONY : Display.cpp.s
+
 Enemies.o: Enemies.cpp.o
 
 .PHONY : Enemies.o
@@ -176,6 +203,60 @@ Enemies.s: Enemies.cpp.s
 Enemies.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Enemies.cpp.s
 .PHONY : Enemies.cpp.s
+
+EntityFactory.o: EntityFactory.cpp.o
+
+.PHONY : EntityFactory.o
+
+# target to build an object file
+EntityFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EntityFactory.cpp.o
+.PHONY : EntityFactory.cpp.o
+
+EntityFactory.i: EntityFactory.cpp.i
+
+.PHONY : EntityFactory.i
+
+# target to preprocess a source file
+EntityFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EntityFactory.cpp.i
+.PHONY : EntityFactory.cpp.i
+
+EntityFactory.s: EntityFactory.cpp.s
+
+.PHONY : EntityFactory.s
+
+# target to generate assembly for a file
+EntityFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EntityFactory.cpp.s
+.PHONY : EntityFactory.cpp.s
+
+EventHandler.o: EventHandler.cpp.o
+
+.PHONY : EventHandler.o
+
+# target to build an object file
+EventHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EventHandler.cpp.o
+.PHONY : EventHandler.cpp.o
+
+EventHandler.i: EventHandler.cpp.i
+
+.PHONY : EventHandler.i
+
+# target to preprocess a source file
+EventHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EventHandler.cpp.i
+.PHONY : EventHandler.cpp.i
+
+EventHandler.s: EventHandler.cpp.s
+
+.PHONY : EventHandler.s
+
+# target to generate assembly for a file
+EventHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/EventHandler.cpp.s
+.PHONY : EventHandler.cpp.s
 
 GameEngine.o: GameEngine.cpp.o
 
@@ -204,6 +285,33 @@ GameEngine.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/GameEngine.cpp.s
 .PHONY : GameEngine.cpp.s
 
+GameLogic.o: GameLogic.cpp.o
+
+.PHONY : GameLogic.o
+
+# target to build an object file
+GameLogic.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/GameLogic.cpp.o
+.PHONY : GameLogic.cpp.o
+
+GameLogic.i: GameLogic.cpp.i
+
+.PHONY : GameLogic.i
+
+# target to preprocess a source file
+GameLogic.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/GameLogic.cpp.i
+.PHONY : GameLogic.cpp.i
+
+GameLogic.s: GameLogic.cpp.s
+
+.PHONY : GameLogic.s
+
+# target to generate assembly for a file
+GameLogic.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/GameLogic.cpp.s
+.PHONY : GameLogic.cpp.s
+
 Object.o: Object.cpp.o
 
 .PHONY : Object.o
@@ -231,6 +339,33 @@ Object.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Object.cpp.s
 .PHONY : Object.cpp.s
 
+ObjectManager.o: ObjectManager.cpp.o
+
+.PHONY : ObjectManager.o
+
+# target to build an object file
+ObjectManager.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectManager.cpp.o
+.PHONY : ObjectManager.cpp.o
+
+ObjectManager.i: ObjectManager.cpp.i
+
+.PHONY : ObjectManager.i
+
+# target to preprocess a source file
+ObjectManager.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectManager.cpp.i
+.PHONY : ObjectManager.cpp.i
+
+ObjectManager.s: ObjectManager.cpp.s
+
+.PHONY : ObjectManager.s
+
+# target to generate assembly for a file
+ObjectManager.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectManager.cpp.s
+.PHONY : ObjectManager.cpp.s
+
 Player.o: Player.cpp.o
 
 .PHONY : Player.o
@@ -257,6 +392,60 @@ Player.s: Player.cpp.s
 Player.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Player.cpp.s
 .PHONY : Player.cpp.s
+
+ResourceManager.o: ResourceManager.cpp.o
+
+.PHONY : ResourceManager.o
+
+# target to build an object file
+ResourceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ResourceManager.cpp.o
+.PHONY : ResourceManager.cpp.o
+
+ResourceManager.i: ResourceManager.cpp.i
+
+.PHONY : ResourceManager.i
+
+# target to preprocess a source file
+ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ResourceManager.cpp.i
+.PHONY : ResourceManager.cpp.i
+
+ResourceManager.s: ResourceManager.cpp.s
+
+.PHONY : ResourceManager.s
+
+# target to generate assembly for a file
+ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ResourceManager.cpp.s
+.PHONY : ResourceManager.cpp.s
+
+Timer.o: Timer.cpp.o
+
+.PHONY : Timer.o
+
+# target to build an object file
+Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Timer.cpp.o
+.PHONY : Timer.cpp.o
+
+Timer.i: Timer.cpp.i
+
+.PHONY : Timer.i
+
+# target to preprocess a source file
+Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Timer.cpp.i
+.PHONY : Timer.cpp.i
+
+Timer.s: Timer.cpp.s
+
+.PHONY : Timer.s
+
+# target to generate assembly for a file
+Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Timer.cpp.s
+.PHONY : Timer.cpp.s
 
 main.o: main.cpp.o
 
@@ -297,18 +486,39 @@ help:
 	@echo "... Asteroid.o"
 	@echo "... Asteroid.i"
 	@echo "... Asteroid.s"
+	@echo "... Display.o"
+	@echo "... Display.i"
+	@echo "... Display.s"
 	@echo "... Enemies.o"
 	@echo "... Enemies.i"
 	@echo "... Enemies.s"
+	@echo "... EntityFactory.o"
+	@echo "... EntityFactory.i"
+	@echo "... EntityFactory.s"
+	@echo "... EventHandler.o"
+	@echo "... EventHandler.i"
+	@echo "... EventHandler.s"
 	@echo "... GameEngine.o"
 	@echo "... GameEngine.i"
 	@echo "... GameEngine.s"
+	@echo "... GameLogic.o"
+	@echo "... GameLogic.i"
+	@echo "... GameLogic.s"
 	@echo "... Object.o"
 	@echo "... Object.i"
 	@echo "... Object.s"
+	@echo "... ObjectManager.o"
+	@echo "... ObjectManager.i"
+	@echo "... ObjectManager.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
+	@echo "... ResourceManager.o"
+	@echo "... ResourceManager.i"
+	@echo "... ResourceManager.s"
+	@echo "... Timer.o"
+	@echo "... Timer.i"
+	@echo "... Timer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
