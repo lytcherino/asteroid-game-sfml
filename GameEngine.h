@@ -12,12 +12,11 @@
 #include "GameLogic.h"
 #include "EventHandler.h"
 #include "Player.h"
+#include "CollisionManager.h"
 
 namespace GameEngine
 {
   extern Timer loopTimer;
-
-  extern std::shared_ptr<Player> player;
 
   void start();
   void run();

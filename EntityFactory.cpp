@@ -1,6 +1,6 @@
 #include "EntityFactory.h"
 
-std::shared_ptr<Player> EntityFactory::createPlayer(ObjectManager& manager, const std::string& name)
+void EntityFactory::createPlayer(ObjectManager& manager, const std::string& name)
 {
   double x, y, health;
   x = 50;
@@ -9,7 +9,11 @@ std::shared_ptr<Player> EntityFactory::createPlayer(ObjectManager& manager, cons
   std::shared_ptr<Player> player = std::make_shared<Player>(x,y,health,name);
 
   manager.add(player);
-  return player;
+  manager.setPlayer(player);
+
+  std::cerr << "x0: " << player->getShape().getPosition().x << "\n";
+  std::cerr << "x: " << player->getPosition().x << "\n";
+  std::cerr << "x2: " << manager.getPlayer()->getShape().getPosition().x << "\n";
 }
 
 void EntityFactory::createAsteroid(ObjectManager& manager)

@@ -4,28 +4,35 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <memory>
-#include "Player.h"
+#include "ObjectManager.h"
 
 namespace GameLogic
 {
   enum gameState {Uninitialized, Playing, ShowingMenu, Paused};
   extern gameState state;
-  enum keyType {RELEASE, PRESS};
 
-  extern std::shared_ptr<Player> player;
-   
-  void initialise(std::shared_ptr<Player>);
+  extern bool pressingW;
+  extern bool pressingA;
+  extern bool pressingS;
+  extern bool pressingD;
+
+  void initialise();
 
   namespace Keyboard
   {
-    void handleKeyboardEvent(const std::string& key, keyType type);
-    void keyW(keyType type);
-    void keyA(keyType type);
-    void keyS(keyType type);
-    void keyD(keyType type);
-    void keyEsc(keyType type);
-    void keySpace(keyType type);
+    void handleKeyboardInput(ObjectManager& manager);
+    void keyW(ObjectManager& manager);
+    void keyA(ObjectManager& manager);
+    void keyS(ObjectManager& manager);
+    void keyD(ObjectManager& manager);
+    void keyEsc(ObjectManager& manager);
+    void keySpace(ObjectManager& manager);
 
+  }
+
+  namespace Weapon
+  {
+    void fireMissle(ObjectManager& manager);
   }
 
   namespace Collision

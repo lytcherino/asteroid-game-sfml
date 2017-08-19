@@ -369,6 +369,78 @@ CMakeFiles/pro.dir/EventHandler.cpp.o.provides: CMakeFiles/pro.dir/EventHandler.
 CMakeFiles/pro.dir/EventHandler.cpp.o.provides.build: CMakeFiles/pro.dir/EventHandler.cpp.o
 
 
+CMakeFiles/pro.dir/ObjectInterface.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/ObjectInterface.cpp.o: ../ObjectInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pro.dir/ObjectInterface.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/ObjectInterface.cpp.o -c /home/lytchier/Documents/C++/Asteroid/ObjectInterface.cpp
+
+CMakeFiles/pro.dir/ObjectInterface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/ObjectInterface.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/ObjectInterface.cpp > CMakeFiles/pro.dir/ObjectInterface.cpp.i
+
+CMakeFiles/pro.dir/ObjectInterface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/ObjectInterface.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/ObjectInterface.cpp -o CMakeFiles/pro.dir/ObjectInterface.cpp.s
+
+CMakeFiles/pro.dir/ObjectInterface.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/ObjectInterface.cpp.o.requires
+
+CMakeFiles/pro.dir/ObjectInterface.cpp.o.provides: CMakeFiles/pro.dir/ObjectInterface.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectInterface.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/ObjectInterface.cpp.o.provides
+
+CMakeFiles/pro.dir/ObjectInterface.cpp.o.provides.build: CMakeFiles/pro.dir/ObjectInterface.cpp.o
+
+
+CMakeFiles/pro.dir/Missle.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/Missle.cpp.o: ../Missle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pro.dir/Missle.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/Missle.cpp.o -c /home/lytchier/Documents/C++/Asteroid/Missle.cpp
+
+CMakeFiles/pro.dir/Missle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/Missle.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/Missle.cpp > CMakeFiles/pro.dir/Missle.cpp.i
+
+CMakeFiles/pro.dir/Missle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/Missle.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/Missle.cpp -o CMakeFiles/pro.dir/Missle.cpp.s
+
+CMakeFiles/pro.dir/Missle.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/Missle.cpp.o.requires
+
+CMakeFiles/pro.dir/Missle.cpp.o.provides: CMakeFiles/pro.dir/Missle.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Missle.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/Missle.cpp.o.provides
+
+CMakeFiles/pro.dir/Missle.cpp.o.provides.build: CMakeFiles/pro.dir/Missle.cpp.o
+
+
+CMakeFiles/pro.dir/CollisionManager.cpp.o: CMakeFiles/pro.dir/flags.make
+CMakeFiles/pro.dir/CollisionManager.cpp.o: ../CollisionManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/pro.dir/CollisionManager.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pro.dir/CollisionManager.cpp.o -c /home/lytchier/Documents/C++/Asteroid/CollisionManager.cpp
+
+CMakeFiles/pro.dir/CollisionManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pro.dir/CollisionManager.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lytchier/Documents/C++/Asteroid/CollisionManager.cpp > CMakeFiles/pro.dir/CollisionManager.cpp.i
+
+CMakeFiles/pro.dir/CollisionManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pro.dir/CollisionManager.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lytchier/Documents/C++/Asteroid/CollisionManager.cpp -o CMakeFiles/pro.dir/CollisionManager.cpp.s
+
+CMakeFiles/pro.dir/CollisionManager.cpp.o.requires:
+
+.PHONY : CMakeFiles/pro.dir/CollisionManager.cpp.o.requires
+
+CMakeFiles/pro.dir/CollisionManager.cpp.o.provides: CMakeFiles/pro.dir/CollisionManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/CollisionManager.cpp.o.provides.build
+.PHONY : CMakeFiles/pro.dir/CollisionManager.cpp.o.provides
+
+CMakeFiles/pro.dir/CollisionManager.cpp.o.provides.build: CMakeFiles/pro.dir/CollisionManager.cpp.o
+
+
 # Object files for target pro
 pro_OBJECTS = \
 "CMakeFiles/pro.dir/main.cpp.o" \
@@ -383,7 +455,10 @@ pro_OBJECTS = \
 "CMakeFiles/pro.dir/ResourceManager.cpp.o" \
 "CMakeFiles/pro.dir/EntityFactory.cpp.o" \
 "CMakeFiles/pro.dir/GameLogic.cpp.o" \
-"CMakeFiles/pro.dir/EventHandler.cpp.o"
+"CMakeFiles/pro.dir/EventHandler.cpp.o" \
+"CMakeFiles/pro.dir/ObjectInterface.cpp.o" \
+"CMakeFiles/pro.dir/Missle.cpp.o" \
+"CMakeFiles/pro.dir/CollisionManager.cpp.o"
 
 # External object files for target pro
 pro_EXTERNAL_OBJECTS =
@@ -401,6 +476,9 @@ pro: CMakeFiles/pro.dir/ResourceManager.cpp.o
 pro: CMakeFiles/pro.dir/EntityFactory.cpp.o
 pro: CMakeFiles/pro.dir/GameLogic.cpp.o
 pro: CMakeFiles/pro.dir/EventHandler.cpp.o
+pro: CMakeFiles/pro.dir/ObjectInterface.cpp.o
+pro: CMakeFiles/pro.dir/Missle.cpp.o
+pro: CMakeFiles/pro.dir/CollisionManager.cpp.o
 pro: CMakeFiles/pro.dir/build.make
 pro: /usr/lib/x86_64-linux-gnu/libGLU.so
 pro: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -410,7 +488,7 @@ pro: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 pro: /usr/lib/x86_64-linux-gnu/libsfml-audio.so
 pro: /usr/lib/x86_64-linux-gnu/libsfml-network.so
 pro: CMakeFiles/pro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable pro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lytchier/Documents/C++/Asteroid/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable pro"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -431,6 +509,9 @@ CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/ResourceManager.cpp.o.requires
 CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/EntityFactory.cpp.o.requires
 CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/GameLogic.cpp.o.requires
 CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/EventHandler.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/ObjectInterface.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/Missle.cpp.o.requires
+CMakeFiles/pro.dir/requires: CMakeFiles/pro.dir/CollisionManager.cpp.o.requires
 
 .PHONY : CMakeFiles/pro.dir/requires
 

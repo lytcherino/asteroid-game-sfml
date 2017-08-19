@@ -3,110 +3,133 @@
 
 namespace GameLogic
 {
-  std::shared_ptr<Player> player;
   gameState state;
+
+  bool pressingW;
+  bool pressingA;
+  bool pressingS;
+  bool pressingD;
+
   namespace Keyboard
   {
-    void keyW(keyType type)
+    void keyW(ObjectManager& manager)
     {
-      if (type == keyType::PRESS) {
-        if (state == gameState::Playing) {
-          // adjust velocity in y
-          player->setVelocityY(-1.0*player->getMaxVelocity());
+      if (state == gameState::Playing) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+          if(!pressingS) {
+            manager.getPlayer()->setVelocityY(-1.0*manager.getPlayer()->getMaxVelocity());
+            pressingW = true;
+          }
         }
-      }
-      if (type == keyType::RELEASE) {
-        if (state == gameState::Playing) {
-          // adjust velocity in y
-          player->setVelocityY(0);
-        }
-      }
-    }
-    void keyA(keyType type)
-    {
-      if (type == keyType::PRESS) {
-        if (state == gameState::Playing) {
-          // adjust velocity in x
-          player->setVelocityX(-1.0*player->getMaxVelocity());
-        }
-      }
-      if (type == keyType::RELEASE) {
-        if (state == gameState::Playing) {
-          // adjust velocity in x
-          player->setVelocityX(0);
-        }
-      }
-    }
-    void keyS(keyType type)
-    {
-      if (type == keyType::PRESS) {
-        if (state == gameState::Playing) {
-          // adjust velocity in y
-          player->setVelocityY(player->getMaxVelocity());
-        }
-      }
-      if (type == keyType::RELEASE) {
-        if (state == gameState::Playing) {
-          // adjust velocity in y
-          player->setVelocityY(0);
+        else {
+          if (pressingW && !pressingS) {
+            manager.getPlayer()->setVelocityY(0);
+            pressingW = false;
+          }
         }
       }
     }
 
-    void keyD(keyType type)
+    void keyA(ObjectManager& manager)
     {
-      if (type == keyType::PRESS) {
-        if (state == gameState::Playing) {
-          // adjust velocity in x
-          player->setVelocityX(player->getMaxVelocity());
+      if (state == gameState::Playing) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+          if (!pressingD) {
+            manager.getPlayer()->setVelocityX(-1.0*manager.getPlayer()->getMaxVelocity());
+            pressingA = true;
+          }
         }
-      }
-      if (type == keyType::RELEASE) {
-        if (state == gameState::Playing) {
-          // adjust velocity in x
-          player->setVelocityX(0);
-        }
-      }
-    }
-    void keyEsc(keyType type)
-    {
-      if (type == keyType::PRESS) {
-        if (state == gameState::Playing) {
-          // open/close menu
-        }
-      }
-    }
-    void keySpace(keyType type)
-    {
-      if (type == keyType::PRESS) {
-        if (state == gameState::Playing) {
-          // start shooting
-        }
-      }
-      if (type == keyType::RELEASE) {
-        if (state == gameState::Playing) {
-          // stop shooting
-
+        else {
+          if (pressingA && !pressingD) {
+            manager.getPlayer()->setVelocityX(0);
+            pressingA = false;
+          }
         }
       }
     }
 
-    void handleKeyboardEvent(const std::string& key, keyType type)
+    void keyS(ObjectManager& manager)
     {
-      if (key == "W") { keyW(type); }
-      if (key == "A") { keyA(type); }
-      if (key == "S") { keyS(type); }
-      if (key == "D") { keyD(type); }
-      if (key == "Esc") { keyEsc(type); }
-      if (key == "Space") { keySpace(type); }
+      if (state == gameState::Playing) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+          if (!pressingW) {
+            manager.getPlayer()->setVelocityY(manager.getPlayer()->getMaxVelocity());
+            pressingS = true;
+          }
+        }
+        else {
+          if (pressingS && !pressingW) {
+            manager.getPlayer()->setVelocityY(0); 
+            pressingS = false;
+          }
+        }
+      }
+    }
+
+    void keyD(ObjectManager& manager)
+    {
+      if (state == gameState::Playing) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+          if (!pressingA) {
+            manager.getPlayer()->setVelocityX(manager.getPlayer()->getMaxVelocity());
+            pressingD = true;
+          }
+        }
+        else {
+          if (pressingD && !pressingA) {
+            manager.getPlayer()->setVelocityX(0);
+            pressingD = false;
+          }
+        }
+      }
+    }
+
+    void keyEsc(ObjectManager& manager)
+    {
+      if (state == gameState::Playing) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+            // open/close menu
+          manager.getPlayer()->levelPlayer(1);
+          }
+      }
+    }
+
+    void keySpace(ObjectManager& manager)
+    {
+      if (state == gameState::Playing) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+            // start shooting
+          Weapon::fireMissle(manager);
+          }
+      }
+    }
+
+    void handleKeyboardInput(ObjectManager& manager)
+    {
+      keyW(manager);
+      keyD(manager);
+      keyA(manager);
+      keyS(manager);
+      keyEsc(manager);
+      keySpace(manager);
     }
   }
 
-  void initialise(std::shared_ptr<Player> _player)
+  namespace Weapon
+  {
+    void fireMissle(ObjectManager& manager)
+    {
+      if (Missle::missleCount > Missle::maxNumber) { return; }
+      double x = manager.getPlayer()->getPosition().x;
+      double y = manager.getPlayer()->getPosition().y;
+
+      manager.add(std::make_shared<Missle>(x, y));
+    }
+  }
+
+  void initialise()
   {
     state = gameState::Playing;
-    player = _player;
-    
   }
 
   namespace Collision

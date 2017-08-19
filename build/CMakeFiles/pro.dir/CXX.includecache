@@ -16,6 +16,14 @@ Enemies.h
 ResourceManager.h
 /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 
+/home/lytchier/Documents/C++/Asteroid/CollisionManager.cpp
+CollisionManager.h
+/home/lytchier/Documents/C++/Asteroid/CollisionManager.h
+
+/home/lytchier/Documents/C++/Asteroid/CollisionManager.h
+ObjectManager.h
+/home/lytchier/Documents/C++/Asteroid/ObjectManager.h
+
 /home/lytchier/Documents/C++/Asteroid/Display.cpp
 Display.h
 /home/lytchier/Documents/C++/Asteroid/Display.h
@@ -23,14 +31,16 @@ Display.h
 /home/lytchier/Documents/C++/Asteroid/Display.h
 SFML/Graphics.hpp
 -
+string
+-
 
 /home/lytchier/Documents/C++/Asteroid/Enemies.cpp
 Enemies.h
 /home/lytchier/Documents/C++/Asteroid/Enemies.h
 
 /home/lytchier/Documents/C++/Asteroid/Enemies.h
-Object.h
-/home/lytchier/Documents/C++/Asteroid/Object.h
+ObjectInterface.h
+/home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
 
 /home/lytchier/Documents/C++/Asteroid/EntityFactory.cpp
 EntityFactory.h
@@ -93,6 +103,8 @@ EventHandler.h
 /home/lytchier/Documents/C++/Asteroid/EventHandler.h
 Player.h
 /home/lytchier/Documents/C++/Asteroid/Player.h
+CollisionManager.h
+/home/lytchier/Documents/C++/Asteroid/CollisionManager.h
 
 /home/lytchier/Documents/C++/Asteroid/GameLogic.cpp
 GameLogic.h
@@ -107,16 +119,26 @@ iostream
 -
 memory
 -
-Player.h
-/home/lytchier/Documents/C++/Asteroid/Player.h
+ObjectManager.h
+/home/lytchier/Documents/C++/Asteroid/ObjectManager.h
+
+/home/lytchier/Documents/C++/Asteroid/Missle.cpp
+Missle.h
+/home/lytchier/Documents/C++/Asteroid/Missle.h
+
+/home/lytchier/Documents/C++/Asteroid/Missle.h
+ObjectInterface.h
+/home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
+ResourceManager.h
+/home/lytchier/Documents/C++/Asteroid/ResourceManager.h
+ObjectManager.h
+/home/lytchier/Documents/C++/Asteroid/ObjectManager.h
 
 /home/lytchier/Documents/C++/Asteroid/Object.cpp
 Object.h
 /home/lytchier/Documents/C++/Asteroid/Object.h
 
 /home/lytchier/Documents/C++/Asteroid/Object.h
-Position.h
-/home/lytchier/Documents/C++/Asteroid/Position.h
 SFML/Graphics.hpp
 -
 iostream
@@ -129,6 +151,16 @@ memory
 -
 ResourceManager.h
 /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
+
+/home/lytchier/Documents/C++/Asteroid/ObjectInterface.cpp
+ObjectInterface.h
+/home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
+
+/home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
+Object.h
+/home/lytchier/Documents/C++/Asteroid/Object.h
+SFML/Graphics.hpp
+-
 
 /home/lytchier/Documents/C++/Asteroid/ObjectManager.cpp
 ObjectManager.h
@@ -143,20 +175,28 @@ iostream
 -
 Player.h
 /home/lytchier/Documents/C++/Asteroid/Player.h
+Missle.h
+/home/lytchier/Documents/C++/Asteroid/Missle.h
+iostream
+-
+Display.h
+/home/lytchier/Documents/C++/Asteroid/Display.h
+Asteroid.h
+/home/lytchier/Documents/C++/Asteroid/Asteroid.h
+vector
+-
 
 /home/lytchier/Documents/C++/Asteroid/Player.cpp
 Player.h
 /home/lytchier/Documents/C++/Asteroid/Player.h
 
 /home/lytchier/Documents/C++/Asteroid/Player.h
-Object.h
-/home/lytchier/Documents/C++/Asteroid/Object.h
 string
 -
 ResourceManager.h
 /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
-
-/home/lytchier/Documents/C++/Asteroid/Position.h
+ObjectInterface.h
+/home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
 
 /home/lytchier/Documents/C++/Asteroid/ResourceManager.cpp
 ResourceManager.h

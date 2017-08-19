@@ -1,7 +1,6 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
-#include "Position.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <ctime>
@@ -19,7 +18,7 @@ enum ObjectTypes {PLAYER, ASTEROID, MISSLE};
 
 class Object
 {
-
+protected:
   ObjectTypes type;
 
   double health;
@@ -28,49 +27,41 @@ class Object
   static int idCounter;
   const int currentID;
 
-  Position position;
   Velocity velocity;
 
-  sf::Sprite sprite;
-  sf::Texture texture;
-
  public:
-  Object(double _x, double _y, double _health);
+  Object(double _health);
+
   virtual ~Object() {}
-  double getX() const;
-  double getY() const;
+
   double getHealth() const;
 
   Velocity getVelocity() const;
+
   void setVelocity(double x, double y);
 
   void setVelocityX(double x);
   void setVelocityY(double y);
 
-  void setHealth(int);
-  void setPosition(double x, double y);
+  void setHealth(int value);
 
-  Position getPosition() const;
+  int getID() const;
 
-  int getID();
-  void setSprite(sf::Sprite);
-  sf::Sprite getSprite() const;
+ double getMass() const;
+  void setMass(double value);
 
-  double getMass() const;
-  void setMass(double);
-
-  void takeDamage(int);
-  virtual void death() = 0;
-
-  void updateSprite();
-  void updatePosition(sf::Time);
-  void setSpriteTexture(sf::Texture);
-  void setSpriteScale(double x, double y);
+  virtual void takeDamage(int amount);
 
   virtual void collision(std::shared_ptr<Object>) = 0;
-  void draw(sf::RenderWindow&);
+  virtual void death() = 0;
 
-  void setType(enum ObjectTypes);
+  virtual sf::Vector2f getPosition() const = 0;
+  virtual void move(const sf::Vector2f&) = 0;
+  virtual void draw(sf::RenderWindow&) = 0;
+  virtual void setPosition(const sf::Vector2f&) = 0;
+  virtual void collision(const std::shared_ptr<Object>&) = 0;
+
+  void setType(ObjectTypes _type);
   ObjectTypes getType() const;
 };
 

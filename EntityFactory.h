@@ -11,7 +11,7 @@
 
 namespace EntityFactory
 {
-  std::shared_ptr<Player> createPlayer(ObjectManager& manager, const std::string& name);
+  void createPlayer(ObjectManager& manager, const std::string& name);
   void createAsteroid(ObjectManager& manager);
 
 }

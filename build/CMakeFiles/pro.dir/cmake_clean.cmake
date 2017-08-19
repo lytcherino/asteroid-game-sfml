@@ -12,6 +12,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/pro.dir/EntityFactory.cpp.o"
   "CMakeFiles/pro.dir/GameLogic.cpp.o"
   "CMakeFiles/pro.dir/EventHandler.cpp.o"
+  "CMakeFiles/pro.dir/ObjectInterface.cpp.o"
+  "CMakeFiles/pro.dir/Missle.cpp.o"
+  "CMakeFiles/pro.dir/CollisionManager.cpp.o"
   "pro.pdb"
   "pro"
 )

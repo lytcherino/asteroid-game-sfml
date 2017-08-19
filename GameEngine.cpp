@@ -6,28 +6,23 @@ namespace GameEngine
   Timer loopTimer;
   ObjectManager objectManager;
 
-  std::shared_ptr<Player> player;
-
-  //enum game state {Uninitialized, Playing, ShowingMenu, Paused};
-
   void start()
   {
     Display::initialise();
     ResourceManager::initialise();
     GameEngine::initialise();
 
-    GameLogic::initialise(player);
+    GameLogic::initialise();
     run();
   }
 
   void initialise()
   {
-
-    player = EntityFactory::createPlayer(objectManager, "Al");
+    std::srand(std::time(NULL));
+    EntityFactory::createPlayer(objectManager, "Al");
 
     EntityFactory::createAsteroid(objectManager);
     EntityFactory::createAsteroid(objectManager);
-
   }
 
   void render()
@@ -57,6 +52,10 @@ namespace GameEngine
           EventHandler::eventHandler(event);
         }
 
+      CollisionManager::collisionDetectionBasic(objectManager);
+      if (Display::window.hasFocus()) {
+        GameLogic::Keyboard::handleKeyboardInput(objectManager);
+      }
       objectManager.updateAll(loopTimer.getElapsedTime());
       loopTimer.resetTimer();
       render();
@@ -64,4 +63,3 @@ namespace GameEngine
   }
 
 }
-

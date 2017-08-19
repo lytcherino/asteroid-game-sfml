@@ -44,59 +44,54 @@ void ObjectManager::updateAll(sf::Time elapsed)
   std::map<int, std::shared_ptr<Object>>::const_iterator itr;
   for(itr = m_gameObjects.begin(); itr != m_gameObjects.end(); ++itr) {
     updatePosition(itr->second, elapsed);
+    outOfBounds(itr->second);
   }
+}
+
+std::shared_ptr<Player> ObjectManager::getPlayer()
+{
+  return player;
+}
+
+void ObjectManager::setPlayer(std::shared_ptr<Player> _player)
+{
+  player = _player;
+}
+
+std::vector<std::shared_ptr<Object>> ObjectManager::getObjectVector()
+{
+  std::vector<std::shared_ptr<Object>> objects;
+  objects.resize(getObjectCount());
+  int count = 0;
+  for(auto itr = m_gameObjects.begin(); itr != m_gameObjects.end(); ++itr) {
+    objects[count++] = itr->second;
+  }
+  return objects;
 }
 
 void ObjectManager::updatePosition(std::shared_ptr<Object> object, sf::Time elapsed)
 {
-  double x = object->getX();
-  double y = object->getY();
   double x_vel = object->getVelocity().x;
   double y_vel = object->getVelocity().y;
 
-  x += elapsed.asSeconds() * x_vel;
-  y += elapsed.asSeconds() * y_vel; 
-
-  object->setPosition(x, y);
-  object->updateSprite(); 
-
-  //spriteCollision(object);
-
-  //  if (x > WIDTH / 3 || x < 0) { x_vel *= -1;  }
-  //if (y > HEIGHT / 3 || y < 0) { y_vel *= -1; }
-  //object->setVelocity(x_vel, y_vel);
+  object->move(sf::Vector2f(x_vel, y_vel));
 }
 
-/*
-bool ObjectManager::spriteCollision(std::shared_ptr<Object> object)
+void ObjectManager::outOfBounds(std::shared_ptr<Object> object)
 {
-  for(auto object2 : objects) {
-    if (object->getID() != object2->getID()) {
-      if (object->getSprite().getGlobalBounds().intersects(object2->getSprite().getGlobalBounds())) {
-        // Collision
-        std::cerr << "Collision between " << object->getID() << " and " << object2->getID() << "\n";
-        // Ellastic collision physics
+  double x = object->getPosition().x;
+  double y = object->getPosition().y;
 
-        // Individual collision handling
-        object->collision(object2);
-        object2->collision(object);
+  if (x > Display::Bounds::WIDTH) { object->setPosition(sf::Vector2f(0, y)); }
+  if (x < 0) { object->setPosition(sf::Vector2f(Display::Bounds::WIDTH, y)); }
+  if (y > Display::Bounds::HEIGHT) { object->setPosition(sf::Vector2f(x, 0)); }
+  if (y < 0) { object->setPosition(sf::Vector2f(x, Display::Bounds::HEIGHT)); }
+}
 
-        if(object->getHealth() <= 0) {
-          for(int i = 0; i < objects.size(); i++) {
-            if (objects[i]->getID() == object->getID()){
-              objects.erase(objects.begin() + i);
-            }
-          }
-        }
-        if (object2->getHealth() <= 0) {
-          for(int i = 0; i < objects.size(); i++) {
-            if (objects[i]->getID() == object2->getID()){
-              objects.erase(objects.begin() + i);
-            }
-          }
-        }
-      }
-    }
+
+void ObjectManager::checkObject(std::shared_ptr<Object> object)
+{
+  if (object->getHealth() <= 0) {
+    remove(object->getID());
   }
 }
-*/

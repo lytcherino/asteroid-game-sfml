@@ -1,8 +1,11 @@
-#include "Object.h"
+#include "ObjectInterface.h"
 
-class Enemies : public Object
+template<typename T>
+class Enemies : public ObjectInterface<T>
 {
  public:
-  Enemies(double x, double y, double health); 
+  Enemies<T>(double x, double y, double health) : ObjectInterface<T>(x, y, health) {
+
+  }
   virtual ~Enemies() {}
 };

@@ -150,6 +150,33 @@ Asteroid.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Asteroid.cpp.s
 .PHONY : Asteroid.cpp.s
 
+CollisionManager.o: CollisionManager.cpp.o
+
+.PHONY : CollisionManager.o
+
+# target to build an object file
+CollisionManager.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/CollisionManager.cpp.o
+.PHONY : CollisionManager.cpp.o
+
+CollisionManager.i: CollisionManager.cpp.i
+
+.PHONY : CollisionManager.i
+
+# target to preprocess a source file
+CollisionManager.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/CollisionManager.cpp.i
+.PHONY : CollisionManager.cpp.i
+
+CollisionManager.s: CollisionManager.cpp.s
+
+.PHONY : CollisionManager.s
+
+# target to generate assembly for a file
+CollisionManager.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/CollisionManager.cpp.s
+.PHONY : CollisionManager.cpp.s
+
 Display.o: Display.cpp.o
 
 .PHONY : Display.o
@@ -312,6 +339,33 @@ GameLogic.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/GameLogic.cpp.s
 .PHONY : GameLogic.cpp.s
 
+Missle.o: Missle.cpp.o
+
+.PHONY : Missle.o
+
+# target to build an object file
+Missle.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Missle.cpp.o
+.PHONY : Missle.cpp.o
+
+Missle.i: Missle.cpp.i
+
+.PHONY : Missle.i
+
+# target to preprocess a source file
+Missle.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Missle.cpp.i
+.PHONY : Missle.cpp.i
+
+Missle.s: Missle.cpp.s
+
+.PHONY : Missle.s
+
+# target to generate assembly for a file
+Missle.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Missle.cpp.s
+.PHONY : Missle.cpp.s
+
 Object.o: Object.cpp.o
 
 .PHONY : Object.o
@@ -338,6 +392,33 @@ Object.s: Object.cpp.s
 Object.cpp.s:
 	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/Object.cpp.s
 .PHONY : Object.cpp.s
+
+ObjectInterface.o: ObjectInterface.cpp.o
+
+.PHONY : ObjectInterface.o
+
+# target to build an object file
+ObjectInterface.cpp.o:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectInterface.cpp.o
+.PHONY : ObjectInterface.cpp.o
+
+ObjectInterface.i: ObjectInterface.cpp.i
+
+.PHONY : ObjectInterface.i
+
+# target to preprocess a source file
+ObjectInterface.cpp.i:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectInterface.cpp.i
+.PHONY : ObjectInterface.cpp.i
+
+ObjectInterface.s: ObjectInterface.cpp.s
+
+.PHONY : ObjectInterface.s
+
+# target to generate assembly for a file
+ObjectInterface.cpp.s:
+	$(MAKE) -f CMakeFiles/pro.dir/build.make CMakeFiles/pro.dir/ObjectInterface.cpp.s
+.PHONY : ObjectInterface.cpp.s
 
 ObjectManager.o: ObjectManager.cpp.o
 
@@ -486,6 +567,9 @@ help:
 	@echo "... Asteroid.o"
 	@echo "... Asteroid.i"
 	@echo "... Asteroid.s"
+	@echo "... CollisionManager.o"
+	@echo "... CollisionManager.i"
+	@echo "... CollisionManager.s"
 	@echo "... Display.o"
 	@echo "... Display.i"
 	@echo "... Display.s"
@@ -504,9 +588,15 @@ help:
 	@echo "... GameLogic.o"
 	@echo "... GameLogic.i"
 	@echo "... GameLogic.s"
+	@echo "... Missle.o"
+	@echo "... Missle.i"
+	@echo "... Missle.s"
 	@echo "... Object.o"
 	@echo "... Object.i"
 	@echo "... Object.s"
+	@echo "... ObjectInterface.o"
+	@echo "... ObjectInterface.i"
+	@echo "... ObjectInterface.s"
 	@echo "... ObjectManager.o"
 	@echo "... ObjectManager.i"
 	@echo "... ObjectManager.s"

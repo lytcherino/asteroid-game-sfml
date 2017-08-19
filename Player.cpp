@@ -1,24 +1,29 @@
 #include "Player.h"
 
 Player::Player(double x, double y, double health, const std::string & name) :
-  Object(x, y, health) {
+  ObjectInterface(x, y, health) {
   this->name = name;
-  setSpriteScale(0.5, 0.5);
   setType(ObjectTypes::PLAYER);
-  setSpriteTexture(ResourceManager::Texture::player);
+
+  shape = sf::CircleShape(radius, level);
+
+  displayHealth();
 }
 
-void Player::collision(std::shared_ptr<Object> o)
+void Player::levelPlayer(int amount)
 {
-  ObjectTypes type = o->getType();
+  level += amount;
+  shape = sf::CircleShape(radius, level);
+}
 
-  switch(type) {
-  case ObjectTypes::ASTEROID : {
-    // take damage
-    takeDamage(15);
-    std::cerr << "HEALTH : " << getHealth() << "\n"; 
-  }
-  }
+void Player::displayHealth()
+{
+  shape.setFillColor(sf::Color(255 - 255 * health/100, 255 * health/100, 0)); 
+}
+
+void Player::collision(const std::shared_ptr<Object>& o)
+{
+  //ObjectTypes type = o->getType();
 } 
 
 void Player::death()
@@ -34,4 +39,14 @@ double Player::getMaxVelocity() const
 void Player::setMaxVelocity(double velocity)
 {
   maxVelocity = velocity;
+}
+
+std::string Player::getName()
+{
+  return name;
+}
+
+std::string Player::setName(const std::string& _name)
+{
+  name = _name;
 }

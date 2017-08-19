@@ -9,7 +9,7 @@ namespace EventHandler
   void eventHandler(sf::Event);
   namespace Keyboard
   {
-    void eventHandler(sf::Event e, GameLogic::keyType);
+    //
   }
 }
 
