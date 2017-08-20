@@ -3,6 +3,7 @@
 namespace GameEngine
 {
 
+  Timer reloadMissleTimer; 
   Timer loopTimer;
   ObjectManager objectManager;
 
@@ -11,16 +12,26 @@ namespace GameEngine
     Display::initialise();
     ResourceManager::initialise();
     GameEngine::initialise();
-
     GameLogic::initialise();
     run();
   }
 
   void initialise()
-  {
+  { 
     std::srand(std::time(NULL));
     EntityFactory::createPlayer(objectManager, "Al");
 
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
+    EntityFactory::createAsteroid(objectManager);
     EntityFactory::createAsteroid(objectManager);
     EntityFactory::createAsteroid(objectManager);
   }
@@ -35,6 +46,7 @@ namespace GameEngine
 
   void draw()
   {
+    Display::window.draw(ResourceManager::Background::background);
     objectManager.drawAll(Display::window);
   }
 
@@ -56,6 +68,8 @@ namespace GameEngine
       if (Display::window.hasFocus()) {
         GameLogic::Keyboard::handleKeyboardInput(objectManager);
       }
+      GameLogic::Weapon::reloadMissle(objectManager, reloadMissleTimer);
+
       objectManager.updateAll(loopTimer.getElapsedTime());
       loopTimer.resetTimer();
       render();

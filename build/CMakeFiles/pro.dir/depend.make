@@ -22,6 +22,7 @@ CMakeFiles/pro.dir/CollisionManager.cpp.o: ../ResourceManager.h
 
 CMakeFiles/pro.dir/Display.cpp.o: ../Display.cpp
 CMakeFiles/pro.dir/Display.cpp.o: ../Display.h
+CMakeFiles/pro.dir/Display.cpp.o: ../ResourceManager.h
 
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Enemies.cpp
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Enemies.h
@@ -53,6 +54,7 @@ CMakeFiles/pro.dir/EventHandler.cpp.o: ../ObjectInterface.h
 CMakeFiles/pro.dir/EventHandler.cpp.o: ../ObjectManager.h
 CMakeFiles/pro.dir/EventHandler.cpp.o: ../Player.h
 CMakeFiles/pro.dir/EventHandler.cpp.o: ../ResourceManager.h
+CMakeFiles/pro.dir/EventHandler.cpp.o: ../Timer.h
 
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../Asteroid.h
 CMakeFiles/pro.dir/GameEngine.cpp.o: ../CollisionManager.h
@@ -82,6 +84,7 @@ CMakeFiles/pro.dir/GameLogic.cpp.o: ../ObjectInterface.h
 CMakeFiles/pro.dir/GameLogic.cpp.o: ../ObjectManager.h
 CMakeFiles/pro.dir/GameLogic.cpp.o: ../Player.h
 CMakeFiles/pro.dir/GameLogic.cpp.o: ../ResourceManager.h
+CMakeFiles/pro.dir/GameLogic.cpp.o: ../Timer.h
 
 CMakeFiles/pro.dir/Missle.cpp.o: ../Asteroid.h
 CMakeFiles/pro.dir/Missle.cpp.o: ../Display.h

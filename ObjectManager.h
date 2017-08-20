@@ -40,7 +40,7 @@ public:
   void drawAll(sf::RenderWindow& window);
 
   // Put in GameLogic later
-  void outOfBounds(std::shared_ptr<Object> object);
+  bool outOfBounds(std::shared_ptr<Object> object);
 
   std::vector<std::shared_ptr<Object>> getObjectVector();
   void checkObject(std::shared_ptr<Object> object);

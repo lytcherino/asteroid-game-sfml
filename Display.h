@@ -2,11 +2,23 @@
 #define DISPLAY_H
 #include <SFML/Graphics.hpp>
 #include <string>
+#include "ResourceManager.h"
 
 namespace Display
 {
-  constexpr int WIDTH = 1400;
-  constexpr int HEIGHT = 800;
+  constexpr int WIDTH = 1920;
+  constexpr int HEIGHT = 1080;
+
+
+  class Background
+  {
+    sf::Sprite background;
+  public:
+    Background();
+
+    void loadBackground();
+    sf::Sprite getBackground() const;
+  };
 
   extern std::string gameName; 
   namespace Bounds

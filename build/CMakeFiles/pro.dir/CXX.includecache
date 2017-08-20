@@ -9,6 +9,8 @@
 /home/lytchier/Documents/C++/Asteroid/Asteroid.cpp
 Asteroid.h
 /home/lytchier/Documents/C++/Asteroid/Asteroid.h
+iostream
+-
 
 /home/lytchier/Documents/C++/Asteroid/Asteroid.h
 Enemies.h
@@ -33,6 +35,8 @@ SFML/Graphics.hpp
 -
 string
 -
+ResourceManager.h
+/home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 
 /home/lytchier/Documents/C++/Asteroid/Enemies.cpp
 Enemies.h
@@ -121,6 +125,10 @@ memory
 -
 ObjectManager.h
 /home/lytchier/Documents/C++/Asteroid/ObjectManager.h
+math.h
+-
+Timer.h
+/home/lytchier/Documents/C++/Asteroid/Timer.h
 
 /home/lytchier/Documents/C++/Asteroid/Missle.cpp
 Missle.h
@@ -133,6 +141,8 @@ ResourceManager.h
 /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 ObjectManager.h
 /home/lytchier/Documents/C++/Asteroid/ObjectManager.h
+math.h
+-
 
 /home/lytchier/Documents/C++/Asteroid/Object.cpp
 Object.h

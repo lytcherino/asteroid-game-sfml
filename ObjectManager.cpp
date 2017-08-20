@@ -44,7 +44,9 @@ void ObjectManager::updateAll(sf::Time elapsed)
   std::map<int, std::shared_ptr<Object>>::const_iterator itr;
   for(itr = m_gameObjects.begin(); itr != m_gameObjects.end(); ++itr) {
     updatePosition(itr->second, elapsed);
-    outOfBounds(itr->second);
+    if (outOfBounds(itr->second)) {
+      if (itr->second->getType() == ObjectTypes::MISSLE) { itr->second->setHealth(0); checkObject(itr->second); }
+    }
   }
 }
 
@@ -77,21 +79,26 @@ void ObjectManager::updatePosition(std::shared_ptr<Object> object, sf::Time elap
   object->move(sf::Vector2f(x_vel, y_vel));
 }
 
-void ObjectManager::outOfBounds(std::shared_ptr<Object> object)
+bool ObjectManager::outOfBounds(std::shared_ptr<Object> object)
 {
   double x = object->getPosition().x;
   double y = object->getPosition().y;
 
-  if (x > Display::Bounds::WIDTH) { object->setPosition(sf::Vector2f(0, y)); }
-  if (x < 0) { object->setPosition(sf::Vector2f(Display::Bounds::WIDTH, y)); }
-  if (y > Display::Bounds::HEIGHT) { object->setPosition(sf::Vector2f(x, 0)); }
-  if (y < 0) { object->setPosition(sf::Vector2f(x, Display::Bounds::HEIGHT)); }
+  if (x > Display::Bounds::WIDTH) { object->setPosition(sf::Vector2f(0, y)); return true; }
+  if (x < 0) { object->setPosition(sf::Vector2f(Display::Bounds::WIDTH, y)); return true; }
+  if (y > Display::Bounds::HEIGHT) { object->setPosition(sf::Vector2f(x, 0)); return true; }
+  if (y < 0) { object->setPosition(sf::Vector2f(x, Display::Bounds::HEIGHT)); return true; }
+
+  return false;
 }
 
 
 void ObjectManager::checkObject(std::shared_ptr<Object> object)
 {
   if (object->getHealth() <= 0) {
+    if (object->getType() == ObjectTypes::ASTEROID) {
+      getPlayer()->gainExperience(1);
+    }
     remove(object->getID());
   }
 }

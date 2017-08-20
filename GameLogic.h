@@ -5,6 +5,8 @@
 #include <iostream>
 #include <memory>
 #include "ObjectManager.h"
+#include <math.h>
+#include "Timer.h"
 
 namespace GameLogic
 {
@@ -33,6 +35,7 @@ namespace GameLogic
   namespace Weapon
   {
     void fireMissle(ObjectManager& manager);
+    void reloadMissle(ObjectManager& manager, Timer& timer);
   }
 
   namespace Collision

@@ -37,12 +37,12 @@ public:
     window.draw(shape);
   }
 
-  auto getRectangleBounds() -> sf::Rect<float>
+  auto getRectangleBounds() -> sf::Rect<float> override
   {
     return shape.getGlobalBounds();
   }
 
-  auto getIntersection(sf::Rect<float> rect) -> bool
+  auto getIntersection(sf::Rect<float> rect) -> bool override
   { 
     return shape.getGlobalBounds().intersects(rect);
   }

@@ -23,6 +23,7 @@ class Asteroid : public Enemies<sf::ConvexShape>
 
   virtual void collision(const std::shared_ptr<Object>&);
   virtual void death();
+  virtual int getDamageAmount() const;
 };
 
 #endif

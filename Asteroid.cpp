@@ -1,5 +1,6 @@
 #include "Asteroid.h"
 
+#include <iostream>
 
 Asteroid::Asteroid(double x, double y, double _size, double health) :
   Enemies(x, y, health), size(_size) {
@@ -13,6 +14,9 @@ Asteroid::Asteroid(double x, double y, double _size, double health) :
 void Asteroid::collision(const std::shared_ptr<Object>& o)
 {
   ObjectTypes type = o->getType();
+  if (type == ObjectTypes::MISSLE) {
+    takeDamage(o->getDamageAmount());
+  }
 }
 
 void Asteroid::generateShape()
@@ -39,5 +43,9 @@ void Asteroid::generateShape()
 
 void Asteroid::death()
 {
-  // Destroyed, break into smaller pieces
+}
+
+int Asteroid::getDamageAmount() const
+{
+  return ResourceManager::Attributes::Asteroid::damageAmount;
 }

@@ -18,6 +18,8 @@ namespace GameEngine
 {
   extern Timer loopTimer;
 
+  extern Timer reloadMissleTimer;
+
   void start();
   void run();
   void draw();

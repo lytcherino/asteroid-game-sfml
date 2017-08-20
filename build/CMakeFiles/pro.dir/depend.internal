@@ -23,6 +23,7 @@ CMakeFiles/pro.dir/CollisionManager.cpp.o
 CMakeFiles/pro.dir/Display.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Display.cpp
  /home/lytchier/Documents/C++/Asteroid/Display.h
+ /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 CMakeFiles/pro.dir/Enemies.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Enemies.cpp
  /home/lytchier/Documents/C++/Asteroid/Enemies.h
@@ -54,6 +55,7 @@ CMakeFiles/pro.dir/EventHandler.cpp.o
  /home/lytchier/Documents/C++/Asteroid/ObjectManager.h
  /home/lytchier/Documents/C++/Asteroid/Player.h
  /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
+ /home/lytchier/Documents/C++/Asteroid/Timer.h
 CMakeFiles/pro.dir/GameEngine.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Asteroid.h
  /home/lytchier/Documents/C++/Asteroid/CollisionManager.h
@@ -83,6 +85,7 @@ CMakeFiles/pro.dir/GameLogic.cpp.o
  /home/lytchier/Documents/C++/Asteroid/ObjectManager.h
  /home/lytchier/Documents/C++/Asteroid/Player.h
  /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
+ /home/lytchier/Documents/C++/Asteroid/Timer.h
 CMakeFiles/pro.dir/Missle.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Asteroid.h
  /home/lytchier/Documents/C++/Asteroid/Display.h
