@@ -21,6 +21,9 @@ namespace GameEngine
     std::srand(std::time(NULL));
     EntityFactory::createPlayer(objectManager, "Al");
 
+    
+    EntityFactory::createAsteroid(objectManager);
+    /*
     EntityFactory::createAsteroid(objectManager);
     EntityFactory::createAsteroid(objectManager);
     EntityFactory::createAsteroid(objectManager);
@@ -32,8 +35,7 @@ namespace GameEngine
     EntityFactory::createAsteroid(objectManager);
     EntityFactory::createAsteroid(objectManager);
     EntityFactory::createAsteroid(objectManager);
-    EntityFactory::createAsteroid(objectManager);
-    EntityFactory::createAsteroid(objectManager);
+    */
   }
 
   void render()
@@ -63,12 +65,8 @@ namespace GameEngine
         {
           EventHandler::eventHandler(event);
         }
-
-      CollisionManager::collisionDetectionBasic(objectManager);
-      if (Display::window.hasFocus()) {
-        GameLogic::Keyboard::handleKeyboardInput(objectManager);
-      }
-      GameLogic::Weapon::reloadMissle(objectManager, reloadMissleTimer);
+      CollisionManager::update(objectManager);
+      GameLogic::update(objectManager, reloadMissleTimer);
 
       objectManager.updateAll(loopTimer.getElapsedTime());
       loopTimer.resetTimer();

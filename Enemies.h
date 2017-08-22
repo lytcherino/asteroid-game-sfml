@@ -7,5 +7,8 @@ class Enemies : public ObjectInterface<T>
   Enemies<T>(double x, double y, double health) : ObjectInterface<T>(x, y, health) {
 
   }
+
+  virtual int getExperience() = 0;
+
   virtual ~Enemies() {}
 };

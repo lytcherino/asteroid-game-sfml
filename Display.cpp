@@ -16,7 +16,7 @@ namespace Display
   }
   void initialise()
   {
-    window.create(sf::VideoMode(WIDTH, HEIGHT), gameName);
+    window.create(sf::VideoMode(WIDTH, HEIGHT), gameName/*, sf::Style::Fullscreen*/);
     window.setFramerateLimit(frameRateLimit);
   }
 

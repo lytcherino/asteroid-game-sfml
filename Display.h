@@ -9,7 +9,6 @@ namespace Display
   constexpr int WIDTH = 1920;
   constexpr int HEIGHT = 1080;
 
-
   class Background
   {
     sf::Sprite background;
@@ -20,7 +19,8 @@ namespace Display
     sf::Sprite getBackground() const;
   };
 
-  extern std::string gameName; 
+  extern std::string gameName;
+
   namespace Bounds
   {
     extern int WIDTH;

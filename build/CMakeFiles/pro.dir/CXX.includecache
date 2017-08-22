@@ -25,6 +25,12 @@ CollisionManager.h
 /home/lytchier/Documents/C++/Asteroid/CollisionManager.h
 ObjectManager.h
 /home/lytchier/Documents/C++/Asteroid/ObjectManager.h
+GameLogic.h
+/home/lytchier/Documents/C++/Asteroid/GameLogic.h
+SFML/Graphics.hpp
+-
+limits
+-
 
 /home/lytchier/Documents/C++/Asteroid/Display.cpp
 Display.h
@@ -129,6 +135,14 @@ math.h
 -
 Timer.h
 /home/lytchier/Documents/C++/Asteroid/Timer.h
+Object.h
+/home/lytchier/Documents/C++/Asteroid/Object.h
+cmath
+-
+random
+-
+ResourceManager.h
+/home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 
 /home/lytchier/Documents/C++/Asteroid/Missle.cpp
 Missle.h
@@ -161,6 +175,8 @@ memory
 -
 ResourceManager.h
 /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
+Display.h
+/home/lytchier/Documents/C++/Asteroid/Display.h
 
 /home/lytchier/Documents/C++/Asteroid/ObjectInterface.cpp
 ObjectInterface.h
@@ -189,12 +205,12 @@ Missle.h
 /home/lytchier/Documents/C++/Asteroid/Missle.h
 iostream
 -
-Display.h
-/home/lytchier/Documents/C++/Asteroid/Display.h
 Asteroid.h
 /home/lytchier/Documents/C++/Asteroid/Asteroid.h
 vector
 -
+ResourceManager.h
+/home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 
 /home/lytchier/Documents/C++/Asteroid/Player.cpp
 Player.h

@@ -22,6 +22,7 @@ namespace ResourceManager
       player.loadFromFile("../texture2.png");
       asteroid.loadFromFile("../texture.jpg");
       background.loadFromFile("../background2.jpg");
+      background.setRepeated(true);
     }
   }
 
@@ -30,7 +31,7 @@ namespace ResourceManager
     namespace Player
     {
       double maxVelocity = 5;
-      double radius = 40;
+      double radius = 20;
       int damageAmount = 1;
       int initialAmmunition = 100;
       double outlineThichkness = 25;
@@ -42,9 +43,9 @@ namespace ResourceManager
       int colorVariance = 100;
       int maxEdges = 10;
       int minEdges = 4;
-      int maxPositionEdgeX = 200;
-      int maxPositionEdgeY = 200;
-      int minimalEdgeDisplacement = 40;
+      int maxPositionEdgeX = 400;
+      int maxPositionEdgeY = 400;
+      int minimalEdgeDisplacement = 100;
       int damageAmount = 1;
     }
     namespace Missle
@@ -54,6 +55,11 @@ namespace ResourceManager
       double height = 30;
       unsigned maxNumber = 1000;
       int damageAmount = 1;
+    }
+    namespace World
+    {
+      double width = 4000;
+      double height = 4000;
     }
   }
 

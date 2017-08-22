@@ -14,9 +14,13 @@ public:
     Object(health) {
   }
 
-  virtual void collision(const std::shared_ptr<Object>&) = 0;
+  virtual void collision(const std::shared_ptr<Object>&, const sf::Vector2f&, const double&) = 0;
   virtual void death() = 0;
 
+  auto returnShape() -> sf::Shape& override
+  {
+    return shape;
+  }
   auto setPosition(const sf::Vector2f& offset) -> void override
   {
     shape.setPosition(offset);
@@ -47,7 +51,7 @@ public:
     return shape.getGlobalBounds().intersects(rect);
   }
 
-  Shape getShape()
+  Shape& getShape()
   {
     return shape;
   }

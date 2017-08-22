@@ -3,6 +3,7 @@
 
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../Asteroid.cpp
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../Asteroid.h
+CMakeFiles/pro.dir/Asteroid.cpp.o: ../Display.h
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../Enemies.h
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../Object.h
 CMakeFiles/pro.dir/Asteroid.cpp.o: ../ObjectInterface.h
@@ -13,17 +14,20 @@ CMakeFiles/pro.dir/CollisionManager.cpp.o: ../CollisionManager.cpp
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../CollisionManager.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../Display.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../Enemies.h
+CMakeFiles/pro.dir/CollisionManager.cpp.o: ../GameLogic.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../Missle.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../Object.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../ObjectInterface.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../ObjectManager.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../Player.h
 CMakeFiles/pro.dir/CollisionManager.cpp.o: ../ResourceManager.h
+CMakeFiles/pro.dir/CollisionManager.cpp.o: ../Timer.h
 
 CMakeFiles/pro.dir/Display.cpp.o: ../Display.cpp
 CMakeFiles/pro.dir/Display.cpp.o: ../Display.h
 CMakeFiles/pro.dir/Display.cpp.o: ../ResourceManager.h
 
+CMakeFiles/pro.dir/Enemies.cpp.o: ../Display.h
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Enemies.cpp
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Enemies.h
 CMakeFiles/pro.dir/Enemies.cpp.o: ../Object.h
@@ -97,10 +101,12 @@ CMakeFiles/pro.dir/Missle.cpp.o: ../ObjectManager.h
 CMakeFiles/pro.dir/Missle.cpp.o: ../Player.h
 CMakeFiles/pro.dir/Missle.cpp.o: ../ResourceManager.h
 
+CMakeFiles/pro.dir/Object.cpp.o: ../Display.h
 CMakeFiles/pro.dir/Object.cpp.o: ../Object.cpp
 CMakeFiles/pro.dir/Object.cpp.o: ../Object.h
 CMakeFiles/pro.dir/Object.cpp.o: ../ResourceManager.h
 
+CMakeFiles/pro.dir/ObjectInterface.cpp.o: ../Display.h
 CMakeFiles/pro.dir/ObjectInterface.cpp.o: ../Object.h
 CMakeFiles/pro.dir/ObjectInterface.cpp.o: ../ObjectInterface.cpp
 CMakeFiles/pro.dir/ObjectInterface.cpp.o: ../ObjectInterface.h
@@ -117,6 +123,7 @@ CMakeFiles/pro.dir/ObjectManager.cpp.o: ../ObjectManager.h
 CMakeFiles/pro.dir/ObjectManager.cpp.o: ../Player.h
 CMakeFiles/pro.dir/ObjectManager.cpp.o: ../ResourceManager.h
 
+CMakeFiles/pro.dir/Player.cpp.o: ../Display.h
 CMakeFiles/pro.dir/Player.cpp.o: ../Object.h
 CMakeFiles/pro.dir/Player.cpp.o: ../ObjectInterface.h
 CMakeFiles/pro.dir/Player.cpp.o: ../Player.cpp

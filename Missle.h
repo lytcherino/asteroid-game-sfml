@@ -16,7 +16,7 @@ public:
   Missle(double x, double y, double rotation);
   ~Missle();
   
-  virtual void collision(const std::shared_ptr<Object>& o) override;
+  virtual void collision(const std::shared_ptr<Object>& o, const sf::Vector2f&, const double&) override;
   virtual void death() override;
   virtual int getDamageAmount() const override;
 

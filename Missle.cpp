@@ -13,6 +13,7 @@ Missle::Missle(double x, double y, double rotation) : ObjectInterface(x, y, 100)
   shape.rotate(rotation);
   shape.setOrigin(shape.getLocalBounds().width/2, shape.getLocalBounds().height+cos(rotation));
   setVelocity(sin(shape.getRotation()) * maxVelocity, -cos(shape.getRotation()) * maxVelocity);
+  setMass(0.01);
 }
 
 Missle::~Missle()
@@ -20,7 +21,7 @@ Missle::~Missle()
   missleCount--;
 }
 
-void Missle::collision(const std::shared_ptr<Object>& o )
+void Missle::collision(const std::shared_ptr<Object>& o, const sf::Vector2f& axis, const double& overlap)
 {
   ObjectTypes type = o->getType();
   if (type == ObjectTypes::ASTEROID) {

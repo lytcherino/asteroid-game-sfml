@@ -28,10 +28,10 @@ class Player : public ObjectInterface<sf::CircleShape>
   Player(double x, double y, double health, const std::string& name);
   ~Player() {}
 
-  virtual void collision(const std::shared_ptr<Object>&) override;
+  virtual void collision(const std::shared_ptr<Object>&, const sf::Vector2f&, const double&) override;
   virtual void death() override;
   virtual int getDamageAmount() const override;
-   
+
   void levelPlayer();
 
   void gainExperience(double amount);
@@ -43,6 +43,7 @@ class Player : public ObjectInterface<sf::CircleShape>
 
   std::string setName(const std::string& _name);
 
+  double getMaxAcceleration() const;
   double getMaxVelocity() const;
   void setMaxVelocity(double velocity);
 

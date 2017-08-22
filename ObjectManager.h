@@ -7,9 +7,9 @@
 #include "Player.h"
 #include "Missle.h"
 #include <iostream>
-#include "Display.h"
 #include "Asteroid.h"
 #include <vector>
+#include "ResourceManager.h"
 
 class ObjectManager
 {
@@ -49,8 +49,11 @@ public:
   void remove(int ID);
   int getObjectCount() const;
   void updateAll(sf::Time);
+  void update(std::shared_ptr<Object>, sf::Time);
   std::shared_ptr<Player> getPlayer();
   void setPlayer(std::shared_ptr<Player>);
+
+  std::map<int, std::shared_ptr<Object>> getObjectMap() const;
 };
 
 #endif

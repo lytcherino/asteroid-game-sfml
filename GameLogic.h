@@ -7,21 +7,34 @@
 #include "ObjectManager.h"
 #include <math.h>
 #include "Timer.h"
+#include "Object.h"
+#include <cmath>
+#include <random>
+#include "ResourceManager.h"
 
 namespace GameLogic
 {
   enum gameState {Uninitialized, Playing, ShowingMenu, Paused};
   extern gameState state;
 
-  extern bool pressingW;
-  extern bool pressingA;
-  extern bool pressingS;
-  extern bool pressingD;
-
   void initialise();
+  void update(ObjectManager&, Timer& timer);
 
+  namespace Mouse
+  {
+    void update(ObjectManager& manager);
+
+    void handleMouse(ObjectManager& manager);
+  }
   namespace Keyboard
   {
+    extern bool pressingW;
+    extern bool pressingA;
+    extern bool pressingS;
+    extern bool pressingD;
+
+    void update(ObjectManager& manager);
+
     void handleKeyboardInput(ObjectManager& manager);
     void keyW(ObjectManager& manager);
     void keyA(ObjectManager& manager);
@@ -34,13 +47,39 @@ namespace GameLogic
 
   namespace Weapon
   {
+    void update(ObjectManager& manager, Timer& timer);
+    
     void fireMissle(ObjectManager& manager);
     void reloadMissle(ObjectManager& manager, Timer& timer);
   }
 
-  namespace Collision
+  namespace PowerUp
   {
     
+  }
+
+  namespace Camera
+  {
+    extern sf::View view;
+    extern double zoom;
+    void initialise();
+    void update(ObjectManager&);
+  }
+  namespace Random
+  {
+    void initialise();
+  }
+  namespace Physics
+  {
+    void update(ObjectManager&);
+    namespace Gravity
+    {
+      void update(ObjectManager&);
+    }
+  }
+
+  namespace Collision
+  {
   }
 
 }

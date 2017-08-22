@@ -4,8 +4,8 @@ Player::Player(double x, double y, double health, const std::string & name) :
   ObjectInterface(x, y, health) {
   this->name = name;
   setType(ObjectTypes::PLAYER);
-
   initialise(x, y, 0);
+  shape.setPosition(400, 400);
 }
 
 void Player::initialise(double x, double y, double rotation)
@@ -17,6 +17,7 @@ void Player::initialise(double x, double y, double rotation)
   setPosition(sf::Vector2f(x, y));
   displayHealth();
   indicateAmmunition();
+  setMass(1.0);
 }
 
 void Player::levelPlayer()
@@ -24,6 +25,9 @@ void Player::levelPlayer()
   std::cerr << experience << "\n";
   while (experience >= requiredExperience) {
     level++;
+    
+    setMass(getMass() + (level - 2)); // provide less acceleration
+
     initialise(shape.getPosition().x, shape.getPosition().y, shape.getRotation());
 
     clamp(experience, -requiredExperience, 100, 0);
@@ -44,6 +48,11 @@ void Player::updateAmmunition(int amount)
 void Player::displayHealth()
 {
   shape.setFillColor(sf::Color(255 - 255 * health/100, 255 * health/100, 0)); 
+}
+
+double Player::getMaxAcceleration() const
+{
+  return 5.0 / mass;
 }
 
 void Player::indicateAmmunition()
@@ -70,7 +79,7 @@ void Player::gainExperience(double amount)
   levelPlayer();
 }
 
-void Player::collision(const std::shared_ptr<Object>& o)
+void Player::collision(const std::shared_ptr<Object>& o, const sf::Vector2f& axis, const double& overlap)
 {
   ObjectTypes type = o->getType();
   if (type == ObjectTypes::MISSLE) {
@@ -78,6 +87,7 @@ void Player::collision(const std::shared_ptr<Object>& o)
   }
   if (type == ObjectTypes::ASTEROID) {
     //takeDamage(o->getDamageAmount());
+    ellasticReverse(o, axis, overlap);
   }
 
   displayHealth();

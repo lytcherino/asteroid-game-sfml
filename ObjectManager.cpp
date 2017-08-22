@@ -43,11 +43,25 @@ void ObjectManager::updateAll(sf::Time elapsed)
 {
   std::map<int, std::shared_ptr<Object>>::const_iterator itr;
   for(itr = m_gameObjects.begin(); itr != m_gameObjects.end(); ++itr) {
-    updatePosition(itr->second, elapsed);
-    if (outOfBounds(itr->second)) {
-      if (itr->second->getType() == ObjectTypes::MISSLE) { itr->second->setHealth(0); checkObject(itr->second); }
+    update(itr->second, elapsed);
+  }
+}
+
+void ObjectManager::update(std::shared_ptr<Object> object, sf::Time elapsed)
+{
+  updatePosition(object, elapsed);
+  if (outOfBounds(object)) {
+    if (auto missle = std::dynamic_pointer_cast<Missle>(object)) {
+      missle->setHealth(0);
+    }
+    if (auto asteroid = std::dynamic_pointer_cast<Asteroid>(object)) {
+      //object->ellasticReverse();
+    }
+    if (auto player = std::dynamic_pointer_cast<Player>(object)) {
+      object->teleportAtEdge();
     }
   }
+  checkObject(object);
 }
 
 std::shared_ptr<Player> ObjectManager::getPlayer()
@@ -73,10 +87,15 @@ std::vector<std::shared_ptr<Object>> ObjectManager::getObjectVector()
 
 void ObjectManager::updatePosition(std::shared_ptr<Object> object, sf::Time elapsed)
 {
-  double x_vel = object->getVelocity().x;
-  double y_vel = object->getVelocity().y;
+  double x_acc = object->getAcceleration().x;
+  double y_acc = object->getAcceleration().y;
 
+  double x_vel = x_acc * elapsed.asSeconds() + object->getVelocity().x;
+  double y_vel = y_acc * elapsed.asSeconds() + object->getVelocity().y;
+
+  object->setVelocity(x_vel, y_vel);
   object->move(sf::Vector2f(x_vel, y_vel));
+  //object->adjustPosition(sf::Vector2f(x_vel * elapsed.asSeconds(), y_vel * elapsed.asSeconds()));
 }
 
 bool ObjectManager::outOfBounds(std::shared_ptr<Object> object)
@@ -84,11 +103,10 @@ bool ObjectManager::outOfBounds(std::shared_ptr<Object> object)
   double x = object->getPosition().x;
   double y = object->getPosition().y;
 
-  if (x > Display::Bounds::WIDTH) { object->setPosition(sf::Vector2f(0, y)); return true; }
-  if (x < 0) { object->setPosition(sf::Vector2f(Display::Bounds::WIDTH, y)); return true; }
-  if (y > Display::Bounds::HEIGHT) { object->setPosition(sf::Vector2f(x, 0)); return true; }
-  if (y < 0) { object->setPosition(sf::Vector2f(x, Display::Bounds::HEIGHT)); return true; }
-
+  if (x > ResourceManager::Attributes::World::width/2) { return true; }
+  if (x < - ResourceManager::Attributes::World::width/2) { return true; }
+  if (y > ResourceManager::Attributes::World::height/2) { return true; }
+  if (y < - ResourceManager::Attributes::World::height/2) { return true; }
   return false;
 }
 
@@ -96,9 +114,14 @@ bool ObjectManager::outOfBounds(std::shared_ptr<Object> object)
 void ObjectManager::checkObject(std::shared_ptr<Object> object)
 {
   if (object->getHealth() <= 0) {
-    if (object->getType() == ObjectTypes::ASTEROID) {
-      getPlayer()->gainExperience(1);
+    if (std::shared_ptr<Asteroid> a = std::dynamic_pointer_cast<Asteroid>(object)) {
+      getPlayer()->gainExperience(a->getExperience());
     }
     remove(object->getID());
   }
+}
+
+std::map<int, std::shared_ptr<Object>> ObjectManager::getObjectMap() const
+{
+  return m_gameObjects;
 }

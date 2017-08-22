@@ -49,6 +49,11 @@ namespace ResourceManager
       extern unsigned maxNumber;
       extern int damageAmount;
     }
+    namespace World
+    {
+      extern double width;
+      extern double height;
+    }
   }
 
   void initialise();

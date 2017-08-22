@@ -4,6 +4,7 @@
 CMakeFiles/pro.dir/Asteroid.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Asteroid.cpp
  /home/lytchier/Documents/C++/Asteroid/Asteroid.h
+ /home/lytchier/Documents/C++/Asteroid/Display.h
  /home/lytchier/Documents/C++/Asteroid/Enemies.h
  /home/lytchier/Documents/C++/Asteroid/Object.h
  /home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
@@ -14,17 +15,20 @@ CMakeFiles/pro.dir/CollisionManager.cpp.o
  /home/lytchier/Documents/C++/Asteroid/CollisionManager.h
  /home/lytchier/Documents/C++/Asteroid/Display.h
  /home/lytchier/Documents/C++/Asteroid/Enemies.h
+ /home/lytchier/Documents/C++/Asteroid/GameLogic.h
  /home/lytchier/Documents/C++/Asteroid/Missle.h
  /home/lytchier/Documents/C++/Asteroid/Object.h
  /home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
  /home/lytchier/Documents/C++/Asteroid/ObjectManager.h
  /home/lytchier/Documents/C++/Asteroid/Player.h
  /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
+ /home/lytchier/Documents/C++/Asteroid/Timer.h
 CMakeFiles/pro.dir/Display.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Display.cpp
  /home/lytchier/Documents/C++/Asteroid/Display.h
  /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 CMakeFiles/pro.dir/Enemies.cpp.o
+ /home/lytchier/Documents/C++/Asteroid/Display.h
  /home/lytchier/Documents/C++/Asteroid/Enemies.cpp
  /home/lytchier/Documents/C++/Asteroid/Enemies.h
  /home/lytchier/Documents/C++/Asteroid/Object.h
@@ -98,10 +102,12 @@ CMakeFiles/pro.dir/Missle.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Player.h
  /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 CMakeFiles/pro.dir/Object.cpp.o
+ /home/lytchier/Documents/C++/Asteroid/Display.h
  /home/lytchier/Documents/C++/Asteroid/Object.cpp
  /home/lytchier/Documents/C++/Asteroid/Object.h
  /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 CMakeFiles/pro.dir/ObjectInterface.cpp.o
+ /home/lytchier/Documents/C++/Asteroid/Display.h
  /home/lytchier/Documents/C++/Asteroid/Object.h
  /home/lytchier/Documents/C++/Asteroid/ObjectInterface.cpp
  /home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
@@ -118,6 +124,7 @@ CMakeFiles/pro.dir/ObjectManager.cpp.o
  /home/lytchier/Documents/C++/Asteroid/Player.h
  /home/lytchier/Documents/C++/Asteroid/ResourceManager.h
 CMakeFiles/pro.dir/Player.cpp.o
+ /home/lytchier/Documents/C++/Asteroid/Display.h
  /home/lytchier/Documents/C++/Asteroid/Object.h
  /home/lytchier/Documents/C++/Asteroid/ObjectInterface.h
  /home/lytchier/Documents/C++/Asteroid/Player.cpp
